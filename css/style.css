@@ -1,3 +1,5 @@
+/* https://supersimple.dev/exercises/youtube */
+
 p {
   font-family: Roboto, Arial;
   margin-top: 0;
@@ -5,27 +7,22 @@ p {
 }
 
 .thumbnail img {
-  width: 300px;
+  width: 100%;
 }
 
 .single-video {
-  display: inline-block;
-  vertical-align: top;
 }
 
 .user-image {
-  display: inline-block;
   vertical-align: top;
 }
 
 .user-image img {
-  display: inline-block;
   border-radius: 30px;
   width: 35px;
 }
 
 .video-text {
-  display: inline-block;
   width: 250px;
 }
 
@@ -38,6 +35,8 @@ p {
 
 .video-info {
   margin-top: 10px;
+  display: grid;
+  grid-template-columns: 50px 1fr;
 }
 
 .video-author,
@@ -48,4 +47,11 @@ p {
 
 .video-stats {
   margin-top: 6px;
+}
+
+.main-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  column-gap: 16px;
+  row-gap: 40px;
 }
